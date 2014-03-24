@@ -1,0 +1,38 @@
+body {
+    font-family: 'Droid Sans', Ubuntu, 'Dejavu Sans', SourceSansPro, Helvetica, Arial, 'Meiryo UI', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#titlebar,
+#status-bar,
+#status-indicators,
+#editor-holder #not-editor {
+    background-color: #3c3f41;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+#titlebar {
+    height: 14px;
+}
+
+#titlebar .title-wrapper {
+    display: none;
+}
+
+#status-info,
+#status-indicators * {
+    color: #fff;
+}
+
+.toolbar .nav .dropdown-toggle {
+    padding: 2px 5px 1px !important;
+    color: #fff;
+    font-size: 13px;
+}
+
+.toolbar .nav .dropdown-toggle:hover {
+    color: inherit;
+}
+
+.toolbar .nav .dropdown-menu {
+    top: 23px;
+}
