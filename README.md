@@ -12,7 +12,7 @@ The following enhancements are applied:
 * Dark editor theme (base16-dark)
 
 The extension is compatible with other theme extensions and only applies
-the dark theme is custom theme is not loaded by any other extension.
+the dark theme if custom theme is not loaded by any other extension.
 
 Screenshots:
 
