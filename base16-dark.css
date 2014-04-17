@@ -11,6 +11,10 @@
 	background: #292929 !important;
 }
 
+.cm-s-base16-dark .CodeMirror-cursors {
+    z-index: 3;
+}
+
 .inline-widget {
   background: #151515;
 }
