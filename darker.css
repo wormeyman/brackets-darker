@@ -36,3 +36,18 @@ body {
 .toolbar .nav .dropdown-menu {
     top: 23px;
 }
+
+.dropdown-toggle:hover,
+.dropdown.open .dropdown-toggle {
+    background: #dfe2e2 !important;
+    border-color: #d0d5d5 !important;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a.highlight {
+    background: #dfe2e2 !important;
+}
+
+.dropdown-menu li a.disabled:hover {
+    background: #fff !important;
+}
