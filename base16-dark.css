@@ -74,7 +74,8 @@
 .cm-s-base16-dark div.CodeMirror-selected {background: #202020 !important;}
 .cm-s-base16-dark .CodeMirror-gutters {background: #151515; border-right: 0px;}
 .cm-s-base16-dark .CodeMirror-linenumber {color: #505050;}
-.cm-s-base16-dark .CodeMirror-cursor {border-left: 1px solid #b0b0b0 !important;}
+.cm-s-base16-dark .CodeMirror-cursor,
+.cm-s-base16-dark .CodeMirror-cursors .CodeMirror-cursor {border-left: 1px solid #b0b0b0 !important;}
 
 .cm-s-base16-dark span.cm-comment {color: #8f5536;}
 .cm-s-base16-dark span.cm-atom {color: #aa759f;}
