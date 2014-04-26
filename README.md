@@ -9,10 +9,10 @@ The following enhancements are applied:
 * Reduce the top titlebar height
 * Dark titlebar, statusbar & empty editor area
 * Override fonts (Droid Sans, Ubuntu, Dejavu Sans)
-* Dark editor theme (base16-dark)
+* Base16 Dark Themes (selected)
 
 The extension is compatible with other theme extensions and only applies
-the dark theme if custom theme is not loaded by any other extension.
+the base16 themes if custom theme is not loaded by any other extension.
 
 Screenshots:
 

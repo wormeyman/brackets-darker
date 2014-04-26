@@ -3,22 +3,13 @@ define(function (require, exports, module) {
     var AppInit = brackets.getModule("utils/AppInit"),
         CodeMirror = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror"),
         EditorManager = brackets.getModule("editor/EditorManager"),
-        ExtensionUtils = brackets.getModule("utils/ExtensionUtils"),
-        PreferencesManager = brackets.getModule("preferences/PreferencesManager");
+        ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
 
-    var DEFAULT_THEME = "base16-default-dark";
-    
-    function getSettings() {
-        return {
-            theme: DEFAULT_THEME
-        };
-    }
+    var Themes = require("themes");
 
     AppInit.appReady(function () {
 
-        var editor = $("#editor-holder .CodeMirror"),
-            promise = ExtensionUtils.loadStyleSheet(module, "darker.css"),
-            settings = getSettings();
+        var promise = ExtensionUtils.loadStyleSheet(module, "darker.css");
 
         promise.then(function () {
             EditorManager.resizeEditor();
@@ -28,15 +19,6 @@ define(function (require, exports, module) {
             return null;
         }
 
-        promise = promise.then(function () {
-            return ExtensionUtils.loadStyleSheet(module, "themes/" + settings.theme + ".css");
-        });
-
-        promise.then(function () {
-            editor.addClass("cm-s-" + settings.theme);
-            CodeMirror.defaults.theme = settings.theme;
-        });
-
-        return promise;
+        return promise.then(Themes.init);
     });
 });
