@@ -93,7 +93,3 @@ body {
 .CodeMirror .CodeMirror-scroll {
     background-color: transparent;
 }
-
-.CodeMirror .CodeMirror span.CodeMirror-matchingbracket {
-  color: white !important;
-}

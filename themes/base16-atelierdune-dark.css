@@ -6,54 +6,116 @@
     CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
     Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
 
- */
+*/
+
 .cm-s-base16-atelierdune-dark ::-webkit-scrollbar {
-  background: #20201d;
+    background: #20201d;
 }
 
 .cm-s-base16-atelierdune-dark ::-webkit-scrollbar-thumb {
-  background: #5d5f60;
-  border-color: #20201d;
+    background: #5d5f60;
+    border-color: #20201d;
 }
 
-.cm-s-base16-atelierdune-dark .CodeMirror-cursors {z-index: 3;}
+.cm-s-base16-atelierdune-dark .CodeMirror-cursors {
+    z-index: 3;
+}
 
-.cm-s-base16-atelierdune-dark.CodeMirror {background: #20201d; color: #e8e4cf;}
-.cm-s-base16-atelierdune-dark div.CodeMirror-selected {background: #292824 !important;}
-.cm-s-base16-atelierdune-dark .CodeMirror-gutters {background: #20201d; border-right: 0px;}
-.cm-s-base16-atelierdune-dark .CodeMirror-linenumber {color: #7d7a68;}
+.cm-s-base16-atelierdune-dark.CodeMirror {
+    background: #20201d;
+    color: #e8e4cf;
+}
+
+.cm-s-base16-atelierdune-dark div.CodeMirror-selected {
+    background: #292824 !important;
+}
+
+.cm-s-base16-atelierdune-dark .CodeMirror-gutters {
+    background: #20201d;
+    border-right: 0px;
+}
+
+.cm-s-base16-atelierdune-dark .CodeMirror-linenumber {
+    color: #7d7a68;
+}
+
 .cm-s-base16-atelierdune-dark .CodeMirror-cursor,
-.cm-s-base16-atelierdune-dark .CodeMirror-cursors .CodeMirror-cursor {border-left: 1px solid #f0f0f0 !important;}
+.cm-s-base16-atelierdune-dark .CodeMirror-cursors .CodeMirror-cursor {
+    border-left: 1px solid #f0f0f0 !important;
+}
 
-.cm-s-base16-atelierdune-dark span.cm-comment {color: #d43552;}
-.cm-s-base16-atelierdune-dark span.cm-atom {color: #b854d4;}
-.cm-s-base16-atelierdune-dark span.cm-number {color: #b854d4;}
+.cm-s-base16-atelierdune-dark span.cm-comment {
+    color: #d43552;
+}
 
-.cm-s-base16-atelierdune-dark span.cm-property, .cm-s-base16-atelierdune-dark span.cm-attribute {color: #60ac39;}
-.cm-s-base16-atelierdune-dark span.cm-keyword {color: #d73737;}
-.cm-s-base16-atelierdune-dark span.cm-string {color: #cfb017;}
+.cm-s-base16-atelierdune-dark span.cm-atom {
+    color: #b854d4;
+}
 
-.cm-s-base16-atelierdune-dark span.cm-variable {color: #60ac39;}
-.cm-s-base16-atelierdune-dark span.cm-variable-2 {color: #6684e1;}
-.cm-s-base16-atelierdune-dark span.cm-def {color: #b65611;}
-.cm-s-base16-atelierdune-dark span.cm-error {background: #d73737; color: #fefbec !important;}
-.cm-s-base16-atelierdune-dark span.cm-bracket {color: #e8e4cf;}
-.cm-s-base16-atelierdune-dark span.cm-tag {color: #d73737;}
-.cm-s-base16-atelierdune-dark span.cm-link {color: #b854d4;}
+.cm-s-base16-atelierdune-dark span.cm-number {
+    color: #b854d4;
+}
 
-.cm-s-base16-atelierdune-dark .CodeMirror-matchingbracket {color: white !important;}
+.cm-s-base16-atelierdune-dark span.cm-property,
+.cm-s-base16-atelierdune-dark span.cm-attribute {
+    color: #60ac39;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-keyword {
+    color: #d73737;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-string {
+    color: #cfb017;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-variable {
+    color: #60ac39;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-variable-2 {
+    color: #6684e1;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-def {
+    color: #b65611;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-error {
+    background: #d73737;
+    color: #fefbec !important;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-bracket {
+    color: #e8e4cf;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-tag {
+    color: #d73737;
+}
+
+.cm-s-base16-atelierdune-dark span.cm-link {
+    color: #b854d4;
+}
+
+.cm-s-base16-atelierdune-dark .CodeMirror-matchingbracket {
+    color: white !important;
+}
 
 .cm-s-base16-atelierdune-dark .CodeMirror-activeline-background {
-  background: #292824 !important;
+    background: #292824 !important;
 }
 
 .cm-s-base16-atelierdune-dark .CodeMirror-activeline .CodeMirror-gutter-elt {
-  background: transparent !important;
-  color: #7d7a68 !important
+    background: transparent !important;
+    color: #7d7a68 !important
 }
 
 .cm-s-base16-atelierdune-dark span.CodeMirror-matchingbracket,
 .cm-s-base16-atelierdune-dark span.CodeMirror-matchingtag {
-  background: #4c4b45 !important;
+    background: #4c4b45 !important;
 }
 
+.cm-s-base16-atelierdune-dark span.CodeMirror-matchingbracket {
+    color: white !important;
+}
