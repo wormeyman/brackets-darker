@@ -3,6 +3,8 @@ define(function (require, exports, module) {
     "use strict";
 
     var THEMES = {
+        'default'                       : 'Brackets Default',
+        '-1'                            : '-',
         'base16-3024-dark'              : 'Base16 3024',
         'base16-atelierdune-dark'       : 'Base16 Atelier Dune',
         'base16-atelierforest-dark'     : 'Base16 Atelier Forest',
@@ -46,12 +48,15 @@ define(function (require, exports, module) {
     function applyTheme(id, name) {
 
         var editor = $("#editor-holder .CodeMirror"),
-            promise = ExtensionUtils.loadStyleSheet(module, "themes/" + name + ".css");
+            previous = getSettings().theme;
 
-        promise.then(function () {
+        function setTheme() {
+
+            editor.removeClass("cm-s-" + previous);
 
             editor.addClass("cm-s-" + name);
             editor.addClass('cm-s-dark');
+
             CodeMirror.defaults.theme = name;
 
             commands.forEach(function (cid) {
@@ -66,7 +71,13 @@ define(function (require, exports, module) {
             setSettings({
                 theme: name
             });
-        });
+        }
+
+        if (name === "default") {
+            return setTheme();
+        }
+
+        ExtensionUtils.loadStyleSheet(module, "themes/" + name + ".css").then(setTheme);
     }
 
     function handler(id, name) {
@@ -94,6 +105,10 @@ define(function (require, exports, module) {
             name, command;
 
         for (name in THEMES) {
+            if (name.indexOf('-') === 0) {
+                menu.addMenuDivider();
+                continue;
+            }
             command = addCommand(menu, name);
             if (settings.theme === name) {
                 command.execute();
@@ -101,7 +116,5 @@ define(function (require, exports, module) {
         }
     }
 
-    return {
-        init: init
-    }
+    exports.init = init;
 });
