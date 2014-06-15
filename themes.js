@@ -100,7 +100,7 @@ define(function (require, exports, module) {
 
     function init() {
 
-        var menu = Menus.addMenu("Themes", "darkerthemes", Menus.BEFORE, Menus.AppMenuBar.HELP_MENU),
+        var menu = Menus.addMenu("Darker", "darkerthemes", Menus.BEFORE, Menus.AppMenuBar.HELP_MENU),
             settings = getSettings(),
             name, command;
 
