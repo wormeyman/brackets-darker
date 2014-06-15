@@ -44,6 +44,10 @@
     border-left: 1px solid #f0f0f0 !important;
 }
 
+.cm-s-base16-default-dark div.CodeMirror-overwrite div.CodeMirror-cursor {
+    border-bottom: 1px solid #f0f0f0 !important;
+}
+
 .cm-s-base16-default-dark span.cm-comment {
     color: #8f5536;
 }
