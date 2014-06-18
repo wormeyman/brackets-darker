@@ -52,6 +52,7 @@ define(function (require, exports, module) {
 
         function setTheme() {
 
+            editor.removeClass("cm-s-default");
             editor.removeClass("cm-s-" + previous);
 
             editor.addClass("cm-s-" + name);
