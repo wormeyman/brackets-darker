@@ -3,103 +3,65 @@
     Name:       Base16 Railscasts Dark
     Author:     Ryan Bates (http://railscasts.com)
 
-    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
+	Brackets Template by Amit Mendapara (https://github.com/cristatus)
     Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
-
 */
 
-.cm-s-base16-railscasts-dark ::-webkit-scrollbar {
-    background: #2b2b2b;
-}
+.cm-s-base16-railscasts-dark .cm-keyword {color: #b6b3eb;}
+.cm-s-base16-railscasts-dark .cm-atom {color: #cc7833;}
+.cm-s-base16-railscasts-dark .cm-number {color: #cc7833;}
+.cm-s-base16-railscasts-dark .cm-def {color: #6d9cbe;}
+.cm-s-base16-railscasts-dark .cm-punctuation {color: #b6b3eb;}
+.cm-s-base16-railscasts-dark .cm-property {color: #6d9cbe;}
+.cm-s-base16-railscasts-dark .cm-operator {color: #e6e1dc;}
+.cm-s-base16-railscasts-dark .cm-variable {color: #da4939;}
+.cm-s-base16-railscasts-dark .cm-variable-2 {color: #da4939;}
+.cm-s-base16-railscasts-dark .cm-variable-3 {color: #da4939;}
+.cm-s-base16-railscasts-dark .cm-comment {color: #5a647e;}
+.cm-s-base16-railscasts-dark .cm-string {color: #a5c261;}
+.cm-s-base16-railscasts-dark .cm-string-2 {color: #519f50;}
+.cm-s-base16-railscasts-dark .cm-meta {color: #bc9458;}
+.cm-s-base16-railscasts-dark .cm-qualifier {color: #e6e1dc;}
+.cm-s-base16-railscasts-dark .cm-builtin {color: #b6b3eb;}
+.cm-s-base16-railscasts-dark .cm-bracket {color: #e6e1dc;}
+.cm-s-base16-railscasts-dark .cm-tag {color: #da4939;}
+.cm-s-base16-railscasts-dark .cm-attribute {color: #cc7833;}
+.cm-s-base16-railscasts-dark .cm-header {color: #6d9cbe;}
+.cm-s-base16-railscasts-dark .cm-quote {color: #cc7833;}
+.cm-s-base16-railscasts-dark .cm-hr {color: #e6e1dc; background-color: #3a4055;}
+.cm-s-base16-railscasts-dark .cm-link {color: #da4939;}
 
-.cm-s-base16-railscasts-dark ::-webkit-scrollbar-thumb {
-    background: #5d5f60;
-    border-color: #2b2b2b;
-}
-
-.cm-s-base16-railscasts-dark .CodeMirror-cursors {
-    z-index: 3;
-}
+.cm-s-base16-railscasts-dark .cm-error,
+.cm-s-base16-railscasts-dark .cm-invalidchar {color: #f9f7f3 !important; background: #da4939;}
 
 .cm-s-base16-railscasts-dark.CodeMirror {
     background: #2b2b2b;
-    color: #f4f1ed;
+    color: #e6e1dc;
 }
 
 .cm-s-base16-railscasts-dark div.CodeMirror-selected {
-    background: #272935 !important;
-}
-
-.cm-s-base16-railscasts-dark .CodeMirror-gutters {
-    background: #2b2b2b;
-    border-right: 0px;
+    background: rgba(160, 160, 160, 0.33) !important;
 }
 
 .cm-s-base16-railscasts-dark .CodeMirror-linenumber {
     color: #5a647e;
 }
 
+.cm-s-base16-railscasts-dark .CodeMirror-gutters {
+    background: #2b2b2b;
+    color: #e6e1dc;
+    border-right: 0px;
+}
+
 .cm-s-base16-railscasts-dark .CodeMirror-cursor,
 .cm-s-base16-railscasts-dark .CodeMirror-cursors .CodeMirror-cursor {
     border-left: 1px solid #f0f0f0 !important;
+    z-index: 3;
 }
 
 .cm-s-base16-railscasts-dark div.CodeMirror-overwrite div.CodeMirror-cursor {
+    border: none !important;
     border-bottom: 1px solid #f0f0f0 !important;
-}
-
-.cm-s-base16-railscasts-dark span.cm-comment {
-    color: #bc9458;
-}
-
-.cm-s-base16-railscasts-dark span.cm-atom {
-    color: #b6b3eb;
-}
-
-.cm-s-base16-railscasts-dark span.cm-number {
-    color: #b6b3eb;
-}
-
-.cm-s-base16-railscasts-dark span.cm-property,
-.cm-s-base16-railscasts-dark span.cm-attribute {
-    color: #a5c261;
-}
-
-.cm-s-base16-railscasts-dark span.cm-keyword {
-    color: #da4939;
-}
-
-.cm-s-base16-railscasts-dark span.cm-string {
-    color: #ffc66d;
-}
-
-.cm-s-base16-railscasts-dark span.cm-variable {
-    color: #a5c261;
-}
-
-.cm-s-base16-railscasts-dark span.cm-variable-2 {
-    color: #6d9cbe;
-}
-
-.cm-s-base16-railscasts-dark span.cm-def {
-    color: #cc7833;
-}
-
-.cm-s-base16-railscasts-dark span.cm-error {
-    background: #da4939;
-    color: #f9f7f3 !important;
-}
-
-.cm-s-base16-railscasts-dark span.cm-bracket {
-    color: #f4f1ed;
-}
-
-.cm-s-base16-railscasts-dark span.cm-tag {
-    color: #da4939;
-}
-
-.cm-s-base16-railscasts-dark span.cm-link {
-    color: #b6b3eb;
 }
 
 .cm-s-base16-railscasts-dark .CodeMirror-matchingbracket {
@@ -107,17 +69,17 @@
 }
 
 .cm-s-base16-railscasts-dark .CodeMirror-activeline-background {
-    background: #272935 !important;
+    background: rgba(80, 80, 80, 0.33) !important;
 }
 
 .cm-s-base16-railscasts-dark .CodeMirror-activeline .CodeMirror-gutter-elt {
     background: transparent !important;
-    color: #5a647e !important
+    color: #3a4055 !important
 }
 
 .cm-s-base16-railscasts-dark span.CodeMirror-matchingbracket,
 .cm-s-base16-railscasts-dark span.CodeMirror-matchingtag {
-    background: #4a4b54 !important;
+    background: #3a4055 !important;
 }
 
 .cm-s-base16-railscasts-dark span.CodeMirror-matchingbracket {

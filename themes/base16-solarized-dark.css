@@ -3,103 +3,65 @@
     Name:       Base16 Solarized Dark
     Author:     Ethan Schoonover (http://ethanschoonover.com/solarized)
 
-    CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-chrome-devtools)
+	Brackets Template by Amit Mendapara (https://github.com/cristatus)
     Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
-
 */
 
-.cm-s-base16-solarized-dark ::-webkit-scrollbar {
-    background: #002b36;
-}
+.cm-s-base16-solarized-dark .cm-keyword {color: #6c71c4;}
+.cm-s-base16-solarized-dark .cm-atom {color: #cb4b16;}
+.cm-s-base16-solarized-dark .cm-number {color: #cb4b16;}
+.cm-s-base16-solarized-dark .cm-def {color: #268bd2;}
+.cm-s-base16-solarized-dark .cm-punctuation {color: #6c71c4;}
+.cm-s-base16-solarized-dark .cm-property {color: #268bd2;}
+.cm-s-base16-solarized-dark .cm-operator {color: #93a1a1;}
+.cm-s-base16-solarized-dark .cm-variable {color: #dc322f;}
+.cm-s-base16-solarized-dark .cm-variable-2 {color: #dc322f;}
+.cm-s-base16-solarized-dark .cm-variable-3 {color: #dc322f;}
+.cm-s-base16-solarized-dark .cm-comment {color: #657b83;}
+.cm-s-base16-solarized-dark .cm-string {color: #859900;}
+.cm-s-base16-solarized-dark .cm-string-2 {color: #2aa198;}
+.cm-s-base16-solarized-dark .cm-meta {color: #d33682;}
+.cm-s-base16-solarized-dark .cm-qualifier {color: #93a1a1;}
+.cm-s-base16-solarized-dark .cm-builtin {color: #6c71c4;}
+.cm-s-base16-solarized-dark .cm-bracket {color: #93a1a1;}
+.cm-s-base16-solarized-dark .cm-tag {color: #dc322f;}
+.cm-s-base16-solarized-dark .cm-attribute {color: #cb4b16;}
+.cm-s-base16-solarized-dark .cm-header {color: #268bd2;}
+.cm-s-base16-solarized-dark .cm-quote {color: #cb4b16;}
+.cm-s-base16-solarized-dark .cm-hr {color: #93a1a1; background-color: #586e75;}
+.cm-s-base16-solarized-dark .cm-link {color: #dc322f;}
 
-.cm-s-base16-solarized-dark ::-webkit-scrollbar-thumb {
-    background: #5d5f60;
-    border-color: #002b36;
-}
-
-.cm-s-base16-solarized-dark .CodeMirror-cursors {
-    z-index: 3;
-}
+.cm-s-base16-solarized-dark .cm-error,
+.cm-s-base16-solarized-dark .cm-invalidchar {color: #fdf6e3 !important; background: #dc322f;}
 
 .cm-s-base16-solarized-dark.CodeMirror {
     background: #002b36;
-    color: #eee8d5;
+    color: #93a1a1;
 }
 
 .cm-s-base16-solarized-dark div.CodeMirror-selected {
-    background: #073642 !important;
-}
-
-.cm-s-base16-solarized-dark .CodeMirror-gutters {
-    background: #002b36;
-    border-right: 0px;
+    background: rgba(160, 160, 160, 0.33) !important;
 }
 
 .cm-s-base16-solarized-dark .CodeMirror-linenumber {
     color: #657b83;
 }
 
+.cm-s-base16-solarized-dark .CodeMirror-gutters {
+    background: #002b36;
+    color: #93a1a1;
+    border-right: 0px;
+}
+
 .cm-s-base16-solarized-dark .CodeMirror-cursor,
 .cm-s-base16-solarized-dark .CodeMirror-cursors .CodeMirror-cursor {
     border-left: 1px solid #f0f0f0 !important;
+    z-index: 3;
 }
 
 .cm-s-base16-solarized-dark div.CodeMirror-overwrite div.CodeMirror-cursor {
+    border: none !important;
     border-bottom: 1px solid #f0f0f0 !important;
-}
-
-.cm-s-base16-solarized-dark span.cm-comment {
-    color: #d33682;
-}
-
-.cm-s-base16-solarized-dark span.cm-atom {
-    color: #6c71c4;
-}
-
-.cm-s-base16-solarized-dark span.cm-number {
-    color: #6c71c4;
-}
-
-.cm-s-base16-solarized-dark span.cm-property,
-.cm-s-base16-solarized-dark span.cm-attribute {
-    color: #859900;
-}
-
-.cm-s-base16-solarized-dark span.cm-keyword {
-    color: #dc322f;
-}
-
-.cm-s-base16-solarized-dark span.cm-string {
-    color: #b58900;
-}
-
-.cm-s-base16-solarized-dark span.cm-variable {
-    color: #859900;
-}
-
-.cm-s-base16-solarized-dark span.cm-variable-2 {
-    color: #268bd2;
-}
-
-.cm-s-base16-solarized-dark span.cm-def {
-    color: #cb4b16;
-}
-
-.cm-s-base16-solarized-dark span.cm-error {
-    background: #dc322f;
-    color: #fdf6e3 !important;
-}
-
-.cm-s-base16-solarized-dark span.cm-bracket {
-    color: #eee8d5;
-}
-
-.cm-s-base16-solarized-dark span.cm-tag {
-    color: #dc322f;
-}
-
-.cm-s-base16-solarized-dark span.cm-link {
-    color: #6c71c4;
 }
 
 .cm-s-base16-solarized-dark .CodeMirror-matchingbracket {
@@ -107,17 +69,17 @@
 }
 
 .cm-s-base16-solarized-dark .CodeMirror-activeline-background {
-    background: #073642 !important;
+    background: rgba(80, 80, 80, 0.33) !important;
 }
 
 .cm-s-base16-solarized-dark .CodeMirror-activeline .CodeMirror-gutter-elt {
     background: transparent !important;
-    color: #657b83 !important
+    color: #586e75 !important
 }
 
 .cm-s-base16-solarized-dark span.CodeMirror-matchingbracket,
 .cm-s-base16-solarized-dark span.CodeMirror-matchingtag {
-    background: #2f565c !important;
+    background: #586e75 !important;
 }
 
 .cm-s-base16-solarized-dark span.CodeMirror-matchingbracket {

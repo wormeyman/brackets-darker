@@ -11,9 +11,6 @@ The following enhancements are applied:
 * Override fonts (Droid Sans, Ubuntu, Dejavu Sans)
 * Base16 Dark Themes (selected)
 
-The extension is compatible with other theme extensions and only applies
-the base16 themes if custom theme is not loaded by any other extension.
-
 Screenshots:
 
 ![Screenshot](https://github.com/cristatus/brackets-darker/raw/master/screenshot.png)
