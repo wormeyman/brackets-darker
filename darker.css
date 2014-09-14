@@ -1,94 +1,88 @@
 body {
-    font-family: 'Droid Sans', Ubuntu, 'Dejavu Sans', SourceSansPro, Helvetica, Arial, 'Meiryo UI', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    background-color: #3c3f41;
-}
-
-#titlebar,
-#main-toolbar,
-#status-bar,
-#status-indicators,
-#editor-holder #not-editor {
-    background-color: #3c3f41;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    font-family: 'Droid Sans', Ubuntu, 'Dejavu Sans', 'SourceSansPro', Helvetica, Arial, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 #titlebar {
-    height: 14px;
+    height: 15px;
 }
 
 #titlebar .title-wrapper {
     display: none;
 }
 
-#status-info,
-#status-indicators * {
-    color: #fff;
-}
-
-.toolbar .nav .dropdown-toggle {
+#titlebar .nav .dropdown-toggle {
     padding: 2px 5px 1px !important;
-    color: #fff;
     font-size: 13px;
+
 }
 
-.toolbar .nav .dropdown-toggle:hover {
-    color: inherit;
-}
-
-.toolbar .nav .dropdown-menu {
+#titlebar .nav .dropdown-menu {
     top: 23px;
 }
 
-.dropdown-toggle:hover,
-.dropdown.open .dropdown-toggle {
-    background: #dfe2e2 !important;
-    border-color: #d0d5d5 !important;
+#titlebar .nav .dropdown-menu {
+    top: 23px;
 }
 
-.dropdown-menu li a:hover,
-.dropdown-menu li a.highlight {
-    background: #dfe2e2 !important;
+.dark body,
+.dark .main-view,
+.dark #editor-holder #not-editor {
+    background: #3c3f41;
 }
 
-.dropdown-menu li a.disabled:hover {
-    background: #fff !important;
+.dark #titlebar {
+    border-bottom: 1px solid #3c3f41;
 }
 
-.inline-widget {
-  background: #151515;
+.dark #titlebar,
+.dark #main-toolbar,
+.dark #status-bar,
+.dark #status-indicators {
+    background-color: #3c3f41;
+    color: #fff;
 }
 
-.inline-widget .CodeMirror-gutter,
-.inline-widget .CodeMirror-linenumbers {
-  background-color:  transparent !important;
+.dark #status-info,
+.dark #status-indicators *,
+.dark #titlebar .nav .dropdown-toggle {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
 }
 
-.inline-widget .close,
-.inline-widget .inline-editor-header .filename {
-  color: #8a8a8a !important;
-  text-shadow: none;
+.dark .dropdown-menu,
+.dark .toolbar .nav .dropdown-menu,
+.dark .context-menu .dropdown-menu,
+.dark .codehint-menu .dropdown-menu {
+    background-color: #444;
+    color: #fff;
 }
 
-.inline-widget .inline-editor-header .btn {
-  border: 1px solid #333434;
-  background-color: #3f4041;
-  box-shadow: inset 0 1px rgba(0,0,0,0.05);
-  color: #c6c8c8;
-  text-shadow: 0 -1px rgba(0,0,0,0.69);
+.dark select > option {
+    background-color: #333 !important;
+    color: #fff !important;
 }
 
-.inline-widget .inline-editor-header .btn:hover {
-  background-color: #626465;
-  color: #c6c8c8;
-  text-shadow: 0 -1px rgba(0,0,0,0.69);
+.dark .dropdown-menu li a,
+.dark .toolbar .nav .dropdown-menu li a,
+.dark .context-menu .dropdown-menu li a,
+.dark .codehint-menu .dropdown-menu li a {
+    text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px;
 }
 
-.inline-widget .shadow.top {
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+.dark .codehint-menu .dropdown-menu li a:hover {
+    background-color: #333;
 }
 
-.inline-widget .shadow.bottom {
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+.dark .toolbar .nav .dropdown-menu li a.disabled,
+.dark .context-menu .dropdown-menu li a.disabled,
+.dark .codehint-menu .dropdown-menu li a.disabled {
+    color: #777;
+}
+
+.dark .toolbar .nav .dropdown-menu li a.disabled:hover,
+.dark .context-menu .dropdown-menu li a.disabled:hover,
+.dark .codehint-menu .dropdown-menu li a.disabled:hover {
+    background-color: #444;
 }
 
 .CodeMirror .CodeMirror-scroll {
