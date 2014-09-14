@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0
+
+ * Adapted to dark ui changes in brackets 0.43
+
 ## 3.0.0
 
 * Complete rewrite of base16 themes
