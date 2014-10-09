@@ -24,14 +24,22 @@ body {
     top: 23px;
 }
 
+#project-files-header {
+    border-top: 0;
+}
+
 .dark body,
 .dark .main-view,
-.dark #editor-holder #not-editor {
+.dark #editor-holder .not-editor {
     background: #3c3f41;
 }
 
 .dark #titlebar {
     border-bottom: 1px solid #3c3f41;
+}
+
+.dark .modal-bar {
+    border-bottom: 1px solid #2c2c2c;
 }
 
 .dark #titlebar,
@@ -57,8 +65,14 @@ body {
     color: #fff;
 }
 
+.dark #function-hint-container {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid rgba(119, 119, 119, 0.15);
+}
+
 .dark select > option {
-    background-color: #333 !important;
+    background-color: #444 !important;
     color: #fff !important;
 }
 
