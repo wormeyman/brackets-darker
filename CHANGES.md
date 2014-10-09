@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.1
+
+ * Fix dark ui issues
+
 ## 3.1.0
 
  * Adapted to dark ui changes in brackets 0.43
