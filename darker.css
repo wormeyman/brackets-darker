@@ -30,7 +30,7 @@ body {
 
 .dark body,
 .dark .main-view,
-.dark #editor-holder .not-editor {
+.dark #editor-holder {
     background: #3c3f41;
 }
 
