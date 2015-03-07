@@ -1,5 +1,9 @@
-body {
-    font-family: 'Droid Sans', Ubuntu, 'Dejavu Sans', 'SourceSansPro', Helvetica, Arial, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+html, body, #status-bar, input, button, select, textarea {
+    font-family: 'Fira Sans', 'Droid Sans', Ubuntu, 'Dejavu Sans', 'SourceSansPro', Helvetica, Arial, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.CodeMirror {
+    font-family: "Fira Mono", "Liberation Mono", "SourceCodePro-Medium", "ＭＳ ゴシック", "MS Gothic", monospace;
 }
 
 #titlebar {
