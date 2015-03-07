@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.0
+
+ * Prefer Fira Sans as interface fonts
+ * Prefer Fira Mono as editor fonts
+ * Fix editor holder background
+
 ## 3.1.1
 
  * Fix dark ui issues

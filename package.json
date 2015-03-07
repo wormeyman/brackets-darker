@@ -1,7 +1,7 @@
 {
     "name": "brackets-darker",
     "title": "Brackets Darker",
-    "version": "3.1.1",
+    "version": "3.2.0",
     "description": "Darker interface & editor themes",
     "homepage": "https://github.com/cristatus/brackets-darker",
     "author": "Amit Mendapara",
@@ -11,7 +11,7 @@
         "url": "https://github.com/cristatus/brackets-darker.git"
     },
     "engines": {
-        "brackets": ">=0.43.0"
+        "brackets": ">=1.2.0"
     },
     "keywords": [
         "Dark",
