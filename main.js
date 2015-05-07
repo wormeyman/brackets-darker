@@ -6,7 +6,8 @@ define(function (require, exports, module) {
         EditorManager = brackets.getModule("editor/EditorManager"),
         ThemeManager = brackets.getModule("view/ThemeManager"),
         ExtensionManager = brackets.getModule("extensibility/ExtensionManager"),
-        ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
+        ExtensionUtils = brackets.getModule("utils/ExtensionUtils"),
+        WorkspaceManager = brackets.getModule("view/WorkspaceManager");
 
     var THEMES = {
         'base16-3024-dark'              : 'Base16 3024',
@@ -34,7 +35,7 @@ define(function (require, exports, module) {
             ThemeManager.loadFile(ExtensionUtils.getModulePath(module, meta.theme.file), meta);
         }
         ExtensionUtils.loadStyleSheet(module, "darker.css").then(function () {
-            EditorManager.resizeEditor();
+            WorkspaceManager.recomputeLayout();
         });
     });
 });
